@@ -11,9 +11,10 @@
 ```bash
 git clone https://github.com/you/os-modern-docker-course.git
 cd os-modern-docker-course
-
+```
 2. Установите Docker Desktop и зарегистрируйтесь в Docker Hub (см. ).
 
 Просмотрите первую лекцию:
 ```bash
 cd lectures/01_introduction
+```
