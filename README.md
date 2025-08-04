@@ -14,7 +14,7 @@ cd os-modern-docker-course
 ```
 2. Установите Docker Desktop и зарегистрируйтесь в Docker Hub (см. ).
 
-Просмотрите первую лекцию:
+3. Просмотрите первую лекцию:
 ```bash
 cd lectures/01_introduction
 ```
