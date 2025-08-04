@@ -8,6 +8,6 @@
 
 ## Начало работы
 1. Клонируйте репозиторий:
-   ```bash
+```bash
 git clone https://github.com/you/os-modern-docker-course.git
 cd os-modern-docker-course
