@@ -69,7 +69,7 @@
 * Для каждой пары:
 <img width="872" height="125" alt="image" src="https://github.com/user-attachments/assets/120a2ab4-f9b5-43f0-abbd-2e3323bda9c8" />
 
-  большие нагрузки → ниже p-value (проще детектировать).
+большие нагрузки → ниже p-value (проще детектировать).
 
 **Вариант 2. RS-анализ :**
 
@@ -86,11 +86,7 @@
 
 **Как задать payload на практике:**
 Пусть `capacity_bits` — доступная емкость. Тогда
-$$
-\text{message\_bits}=
-\Big\lfloor \frac{\text{payload}\%}{100}\cdot \text{capacity\_bits}\Big\rfloor
--\text{service\_bits}.
-$$
+<img width="1020" height="128" alt="image" src="https://github.com/user-attachments/assets/9f754336-a49a-40e2-9240-ace586bd7cda" />
 Округлите вниз до кратного 8, возьмите первые `message_bits/8` байт из исходного текста (или сгенерируйте).
 
 ---
