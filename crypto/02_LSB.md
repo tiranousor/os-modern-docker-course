@@ -24,10 +24,8 @@
 * **Payload (доля полезной нагрузки):** какая часть доступной емкости используется под сообщение.
 
   Емкость при 1 LSB на канал:
-  
-$$
-\text{capacity(bits)}=\text{width}\times\text{height}\times 3\times \text{bits\_per\_channel}
-$$
+
+<img width="622" height="64" alt="image" src="https://github.com/user-attachments/assets/8b93c5a8-34a8-42a8-a0a1-1f8ca36746eb" />
 
 * **Незаметность** оценивают по метрикам качества изображения (PSNR, SSIM).
 * **Обнаружимость** проверяют статистическими тестами на распределения/структуры битов:
@@ -47,12 +45,10 @@ $$
 5. Исследовать влияние **payload**: показать, как меняются качество и обнаружимость при нескольких уровнях загрузки.
 
 **Проверка емкости:**
-$$
-\text{need\_bits}=\text{service\_bits}+8\cdot \text{len(message\_bytes)},\qquad
-\text{need\_bits}\le \text{capacity}.
-$$
 
-   Подумать, какое требование нужно для корректной работы.
+<img width="890" height="55" alt="image" src="https://github.com/user-attachments/assets/aed11793-254e-40c5-b1a1-7580f6d7f522" />
+
+Подумать, какое требование нужно для корректной работы.
 
 ---
 
@@ -69,12 +65,10 @@ $$
 **Вариант 1. χ²-тест по LSB:**
 
 * Для каждого канала собрать гистограмму значений 0…255.
-* Рассмотреть пары $(2k, 2k+1)$.
+* Рассмотреть пары 2k, 2k+1.
 * Для каждой пары:
-$$
-e=\frac{n_{2k}+n_{2k+1}}{2}, \qquad
-\chi^2=\sum_k \left(\frac{(n_{2k}-e)^2}{e}+\frac{(n_{2k+1}-e)^2}{e}\right).
-$$
+<img width="872" height="125" alt="image" src="https://github.com/user-attachments/assets/120a2ab4-f9b5-43f0-abbd-2e3323bda9c8" />
+
   большие нагрузки → ниже p-value (проще детектировать).
 
 **Вариант 2. RS-анализ :**
