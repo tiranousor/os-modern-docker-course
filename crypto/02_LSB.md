@@ -24,9 +24,10 @@
 * **Payload (доля полезной нагрузки):** какая часть доступной емкости используется под сообщение.
 
   Емкость при 1 LSB на канал:
-  [
-  \text{capacity(bits)}=\text{width}\times\text{height}\times 3 \times \text{bits_per_channel}
-  ]
+$$
+\text{capacity(bits)}=\text{width}\times\text{height}\times 3\times \text{bits\_per\_channel}
+$$
+
 * **Незаметность** оценивают по метрикам качества изображения (PSNR, SSIM).
 * **Обнаружимость** проверяют статистическими тестами на распределения/структуры битов:
 
@@ -45,10 +46,11 @@
 5. Исследовать влияние **payload**: показать, как меняются качество и обнаружимость при нескольких уровнях загрузки.
 
 **Проверка емкости:**
-   [
-   \text{need_bits} = \text{service_bits} + 8 \times \text{len(message_bytes)} \
-   \text{capacity} = W\times H \times 3 \times \text{bits}
-   ]
+$$
+\text{need\_bits}=\text{service\_bits}+8\cdot \text{len(message\_bytes)},\qquad
+\text{need\_bits}\le \text{capacity}.
+$$
+
    Подумать, какое требование нужно для корректной работы.
 
 ---
@@ -66,11 +68,12 @@
 **Вариант 1. χ²-тест по LSB:**
 
 * Для каждого канала собрать гистограмму значений 0…255.
-* Рассмотреть пары ((2k,,2k+1)).
-* Вычислять ожидаемое (e=\tfrac{n_{2k}+n_{2k+1}}{2}).
-* Суммировать 
-  [\chi^2 = \sum \frac{(n_{2k}-e)^2}{e} + \frac{(n_{2k+1}-e)^2}{e}]
-  по всем парам;
+* Рассмотреть пары $(2k, 2k+1)$.
+* Для каждой пары:
+$$
+e=\frac{n_{2k}+n_{2k+1}}{2}, \qquad
+\chi^2=\sum_k \left(\frac{(n_{2k}-e)^2}{e}+\frac{(n_{2k+1}-e)^2}{e}\right).
+$$
   большие нагрузки → ниже p-value (проще детектировать).
 
 **Вариант 2. RS-анализ :**
@@ -88,9 +91,11 @@
 
 **Как задать payload на практике:**
 Пусть `capacity_bits` — доступная емкость. Тогда
-[
-\text{message_bits}=\left\lfloor \frac{\text{payload%}}{100}\times \text{capacity_bits} \right\rfloor - \text{service_bits}
-]
+$$
+\text{message\_bits}=
+\Big\lfloor \frac{\text{payload}\%}{100}\cdot \text{capacity\_bits}\Big\rfloor
+-\text{service\_bits}.
+$$
 Округлите вниз до кратного 8, возьмите первые `message_bits/8` байт из исходного текста (или сгенерируйте).
 
 ---
