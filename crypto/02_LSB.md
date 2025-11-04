@@ -86,7 +86,7 @@
 
 **Как задать payload на практике:**
 Пусть `capacity_bits` — доступная емкость. Тогда
-<img width="1020" height="128" alt="image" src="https://github.com/user-attachments/assets/9f754336-a49a-40e2-9240-ace586bd7cda" />
+<img width="900" height="128" alt="image" src="https://github.com/user-attachments/assets/9f754336-a49a-40e2-9240-ace586bd7cda" />
 Округлите вниз до кратного 8, возьмите первые `message_bits/8` байт из исходного текста (или сгенерируйте).
 
 ---
