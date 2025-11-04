@@ -46,7 +46,7 @@
 
 **Проверка емкости:**
 
-<img width="890" height="55" alt="image" src="https://github.com/user-attachments/assets/aed11793-254e-40c5-b1a1-7580f6d7f522" />
+<img width="860" height="68" alt="image" src="https://github.com/user-attachments/assets/2a0c53b1-00e0-4747-9f58-765c75ddd316" />
 
 Подумать, какое требование нужно для корректной работы.
 
