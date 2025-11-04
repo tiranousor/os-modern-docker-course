@@ -46,7 +46,7 @@
 
 **Проверка емкости:**
 
-<img width="860" height="68" alt="image" src="https://github.com/user-attachments/assets/2a0c53b1-00e0-4747-9f58-765c75ddd316" />
+<img width="800" height="68" alt="image" src="https://github.com/user-attachments/assets/2a0c53b1-00e0-4747-9f58-765c75ddd316" />
 
 Подумать, какое требование нужно для корректной работы.
 
@@ -67,7 +67,7 @@
 * Для каждого канала собрать гистограмму значений 0…255.
 * Рассмотреть пары 2k, 2k+1.
 * Для каждой пары:
-<img width="872" height="125" alt="image" src="https://github.com/user-attachments/assets/120a2ab4-f9b5-43f0-abbd-2e3323bda9c8" />
+<img width="800" height="125" alt="image" src="https://github.com/user-attachments/assets/120a2ab4-f9b5-43f0-abbd-2e3323bda9c8" />
 
 большие нагрузки → ниже p-value (проще детектировать).
 
