@@ -26,7 +26,9 @@
   Емкость при 1 LSB на канал:
   
 $$
-\text{capacity(bits)}=\text{width}\times\text{height}\times 3\times \text{bits\_per\_channel}
+\text{message\_bits}=
+\Big\lfloor \frac{\text{payload}\%}{100}\cdot \text{capacity\_bits}\Big\rfloor
+-\text{service\_bits}.
 $$
 
 * **Незаметность** оценивают по метрикам качества изображения (PSNR, SSIM).
