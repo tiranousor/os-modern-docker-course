@@ -44,11 +44,13 @@ internet-technologies/
   01/
   02/
   03/
+  04/
 
 computer-graphics/
   01/
   02/
   03/
+  04/
 ```
 
 В папке работы должны находиться исходный код и `README.md`, если в задании требуется короткое пояснение.
@@ -68,9 +70,11 @@ AI можно использовать для объяснения непоня�
 1. [Как работает веб-приложение](internet-technologies/01_browser_and_web.md)
 2. [JavaScript, DOM и управление состоянием](internet-technologies/02_javascript_dom_events.md)
 3. [HTTP, Fetch API и работа с JSON](internet-technologies/03_http_fetch_json.md)
+4. [HTTP-методы, REST и CRUD](internet-technologies/04_rest_crud.md)
 
 ### Компьютерная графика
 
 1. [Растровая графика, пиксели и алгоритм ЦДА](computer-graphics/01_raster_pixels_dda.md)
 2. [Алгоритм Брезенхема для отрезка](computer-graphics/02_bresenham.md)
 3. [Растеризация окружности: алгоритм средней точки](computer-graphics/03_midpoint_circle.md)
+4. [Отсечение отрезков алгоритмом Коэна–Сазерленда](computer-graphics/04_cohen_sutherland.md)
