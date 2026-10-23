@@ -45,12 +45,14 @@ internet-technologies/
   02/
   03/
   04/
+  05/
 
 computer-graphics/
   01/
   02/
   03/
   04/
+  05/
 ```
 
 В папке работы должны находиться исходный код и `README.md`, если в задании требуется короткое пояснение.
@@ -71,6 +73,7 @@ AI можно использовать для объяснения непоня�
 2. [JavaScript, DOM и управление состоянием](internet-technologies/02_javascript_dom_events.md)
 3. [HTTP, Fetch API и работа с JSON](internet-technologies/03_http_fetch_json.md)
 4. [HTTP-методы, REST и CRUD](internet-technologies/04_rest_crud.md)
+5. [Собственный сервер на Node.js и Express](internet-technologies/05_node_express_server.md)
 
 ### Компьютерная графика
 
@@ -78,3 +81,4 @@ AI можно использовать для объяснения непоня�
 2. [Алгоритм Брезенхема для отрезка](computer-graphics/02_bresenham.md)
 3. [Растеризация окружности: алгоритм средней точки](computer-graphics/03_midpoint_circle.md)
 4. [Отсечение отрезков алгоритмом Коэна–Сазерленда](computer-graphics/04_cohen_sutherland.md)
+5. [Заполнение областей и многоугольников](computer-graphics/05_fill_algorithms.md)
