@@ -46,6 +46,7 @@ internet-technologies/
   03/
   04/
   05/
+  06/
 
 computer-graphics/
   01/
@@ -53,6 +54,7 @@ computer-graphics/
   03/
   04/
   05/
+  06/
 ```
 
 В папке работы должны находиться исходный код и `README.md`, если в задании требуется короткое пояснение.
@@ -74,6 +76,7 @@ AI можно использовать для объяснения непоня�
 3. [HTTP, Fetch API и работа с JSON](internet-technologies/03_http_fetch_json.md)
 4. [HTTP-методы, REST и CRUD](internet-technologies/04_rest_crud.md)
 5. [Собственный сервер на Node.js и Express](internet-technologies/05_node_express_server.md)
+6. [SQLite и хранение данных на сервере](internet-technologies/06_sqlite_crud.md)
 
 ### Компьютерная графика
 
@@ -82,3 +85,4 @@ AI можно использовать для объяснения непоня�
 3. [Растеризация окружности: алгоритм средней точки](computer-graphics/03_midpoint_circle.md)
 4. [Отсечение отрезков алгоритмом Коэна–Сазерленда](computer-graphics/04_cohen_sutherland.md)
 5. [Заполнение областей и многоугольников](computer-graphics/05_fill_algorithms.md)
+6. [Отсечение многоугольников: алгоритм Сазерленда–Ходжмана](computer-graphics/06_sutherland_hodgman.md)
