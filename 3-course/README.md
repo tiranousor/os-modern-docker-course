@@ -48,6 +48,7 @@ internet-technologies/
   05/
   06/
   07/
+  08/
 
 computer-graphics/
   01/
@@ -57,6 +58,7 @@ computer-graphics/
   05/
   06/
   07/
+  08/
 ```
 
 В папке работы должны находиться исходный код и `README.md`, если в задании требуется короткое пояснение.
@@ -80,6 +82,7 @@ AI можно использовать для объяснения непоня�
 5. [Собственный сервер на Node.js и Express](internet-technologies/05_node_express_server.md)
 6. [SQLite и хранение данных на сервере](internet-technologies/06_sqlite_crud.md)
 7. [Клиент и собственный API: fetch, Express и SQLite](internet-technologies/07_frontend_own_api.md)
+8. [Поиск, фильтрация, сортировка и пагинация: API и SQLite](internet-technologies/08_search_sort_pagination.md)
 
 ### Компьютерная графика
 
@@ -90,3 +93,4 @@ AI можно использовать для объяснения непоня�
 5. [Заполнение областей и многоугольников](computer-graphics/05_fill_algorithms.md)
 6. [Отсечение многоугольников: алгоритм Сазерленда–Ходжмана](computer-graphics/06_sutherland_hodgman.md)
 7. [Геометрические преобразования 2D: матрицы, перенос, масштабирование, поворот](computer-graphics/07_2d_transformations.md)
+8. [Основы 3D-графики: матрицы 4×4 и проекции](computer-graphics/08_3d_wireframe_projection.md)
